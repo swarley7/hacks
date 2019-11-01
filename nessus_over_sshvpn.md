@@ -19,7 +19,12 @@ A reboot should be sufficient to clean the config up.
 Requires a bit of setup on the server and client end (assumed you have root on the jumpbox).
 
 # VPN Endpoint: enable PermitTunnel in the SSHD Config
-`sudo sh -c 'echo "PermitTunnel yes" >>/etc/ssh/sshd_config'`
+
+*Note:* This change is persistent; undo once you're done :\
+```
+sudo sh -c 'echo "PermitTunnel yes" >>/etc/ssh/sshd_config'
+sudo systemctl restart sshd
+```
 
 # VPN Endpoint: Configure tun adaptor and enable IP forwarding
 
