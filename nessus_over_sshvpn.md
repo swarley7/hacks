@@ -23,7 +23,7 @@ Requires a bit of setup on the server and client end (assumed you have root on t
 *Note:* This change is persistent; undo once you're done :\
 ```
 sudo sh -c 'echo "PermitTunnel yes" >>/etc/ssh/sshd_config'
-sudo systemctl restart sshd
+sudo systemctl restart ssh
 ```
 
 # VPN Endpoint: Configure tun adaptor and enable IP forwarding
