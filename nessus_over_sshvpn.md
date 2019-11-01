@@ -48,7 +48,8 @@ sudo iptables -A FORWARD -i tun0 -o eth0 -j ACCEPT
 # Kali VM: Configure tun adaptor and IP address
 
 ```sudo ip tuntap add dev tun0 mode tun
-sudo ifconfig tun0 10.1.1.2 pointopoint 10.1.1.1 netmask 255.255.255.252```
+sudo ifconfig tun0 10.1.1.2 pointopoint 10.1.1.1 netmask 255.255.255.252
+```
 
 
 # Enable routing on Kali vm:
